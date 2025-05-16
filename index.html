@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="description" content="Complete water supply system solutions in Oman - pipeline networks, pumping stations & distribution infrastructure by AL WEJHA GROUP" />
+  <meta name="keywords" content="water supply system Oman, pipeline installation, water distribution network, pumping stations Oman, municipal water infrastructure, AL WEJHA GROUP" />
+  <meta name="author" content="AL WEJHA GROUP" />
+  <title>Water Supply Systems in Oman | AL WEJHA GROUP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./water-supply-system-oman.webp" type="image/webp">
+  <style>
+    :root {
+      --pipe-blue: #1a6bb0;
+      --flow-cyan: #00b4d8;
+      --valve-red: #e63946;
+      --infra-gray: #4a5759;
+      --light-bg: #f8f9fa;
+    }
+    
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--light-bg);
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    header {
+      background: linear-gradient(rgba(26,107,176,0.85), rgba(26,107,176,0.85)), 
+                  url('./water-supply-system-oman.webp') center/cover;
+      color: white;
+      padding: 80px 20px 60px;
+      text-align: center;
+      position: relative;
+    }
+    
+    header h1 {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 2.8rem;
+      margin: 0 0 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    header p {
+      font-size: 1.3rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    /* Benchmark Navigation - Identical Structure */
+    nav {
+      background-color: white;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    nav .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    nav a {
+      margin: 0 15px;
+      color: var(--infra-gray);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 5px 0;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s ease;
+    }
+    
+    nav a:hover {
+      color: var(--pipe-blue);
+      border-bottom-color: var(--valve-red);
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Water Supply Specific Styles */
+    .network-diagram {
+      width: 100%;
+      height: auto;
+      margin: 40px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .system-components {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin: 50px 0;
+    }
+    
+    .component-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      border-top: 4px solid var(--flow-cyan);
+    }
+    
+    .component-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    }
+    
+    .component-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    .component-card h3 {
+      color: var(--pipe-blue);
+      margin: 20px 20px 10px;
+    }
+    
+    .specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 30px 0;
+    }
+    
+    .specs-table th {
+      background: var(--pipe-blue);
+      color: white;
+      padding: 12px;
+      text-align: left;
+    }
+    
+    .specs-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .specs-table tr:nth-child(even) {
+      background: #f5f5f5;
+    }
+    
+    /* Benchmark CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--pipe-blue), #144471);
+      color: white;
+      padding: 60px 20px;
+      margin: 60px 0;
+      border-radius: 8px;
+      text-align: center;
+    }
+    
+    .cta, .backlink {
+      display: inline-block;
+      background-color: var(--valve-red);
+      color: white;
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 50px;
+      margin: 10px 10px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    
+    .cta:hover, .backlink:hover {
+      background-color: #c1121f;
+      transform: translateY(-2px);
+    }
+    
+    /* Benchmark Footer */
+    footer {
+      background-color: var(--infra-gray);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+    
+    footer a {
+      color: var(--flow-cyan);
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    
+    footer a:hover {
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      
+      .system-components {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Water Supply Systems in Oman</h1>
+    <p>Reliable water distribution networks for municipalities and industries</p>
+  </header>
+
+  <!-- Benchmark Navigation -->
+  <nav>
+    <div class="container">
+      <a href="https://www.alwejhagroup.com/">Home</a>
+      <a href="https://www.alwejhagroup.com/area-of-expertise" target="_blank">Area Of Expertise</a>
+      <a href="https://www.alwejhagroup.com/our-services" target="_blank">Our Services</a>
+      <a href="https://www.alwejhagroup.com/our-clients" target="_blank">Our Clients</a>
+      <a href="https://www.alwejhagroup.com/contact" target="_blank">Contact</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section>
+      <h2>Integrated Water Supply Solutions</h2>
+      <p>AL WEJHA GROUP designs and implements complete water supply systems across Oman, from high-pressure transmission mains to localized distribution networks. Our turnkey solutions ensure reliable water delivery with minimal losses.</p>
+      
+      <img src="./water-network-diagram.webp" alt="Water supply system diagram" class="network-diagram" loading="lazy">
+      
+      <div class="system-components">
+        <div class="component-card">
+          <img src="./pipeline-installation.webp" alt="Pipeline installation in Oman" loading="lazy">
+          <h3>Transmission Pipelines</h3>
+          <ul>
+            <li>Ductile iron (DI) pipes up to DN1200</li>
+            <li>HDPE pipes for corrosive environments</li>
+            <li>Trenchless installation options</li>
+          </ul>
+        </div>
+        
+        <div class="component-card">
+          <img src="./pumping-station.webp" alt="Pumping station installation" loading="lazy">
+          <h3>Booster Stations</h3>
+          <ul>
+            <li>Horizontal/vertical multistage pumps</li>
+            <li>Variable frequency drives</li>
+            <li>SCADA-controlled operation</li>
+          </ul>
+        </div>
+        
+        <div class="component-card">
+          <img src="./storage-tank.webp" alt="Water storage tanks in Oman" loading="lazy">
+          <h3>Storage Reservoirs</h3>
+          <ul>
+            <li>GRP, steel, and concrete tanks</li>
+            <li>50m³ to 10,000m³ capacity</li>
+            <li>Overflow and level monitoring</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Specifications</h2>
+      <table class="specs-table">
+        <thead>
+          <tr>
+            <th>Component</th>
+            <th>Materials</th>
+            <th>Pressure Rating</th>
+            <th>Standards</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Transmission Mains</td>
+            <td>DI, HDPE, PVC-O</td>
+            <td>PN10-PN25</td>
+            <td>ISO 2531, EN 545</td>
+          </tr>
+          <tr>
+            <td>Distribution Pipes</td>
+            <td>HDPE, uPVC</td>
+            <td>PN6-PN16</td>
+            <td>ISO 4427, EN 1452</td>
+          </tr>
+          <tr>
+            <td>Valve Chambers</td>
+            <td>GRP, Concrete</td>
+            <td>10-25 bar</td>
+            <td>ISO 5208</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Omani Water Infrastructure Experts</h2>
+      <p>With projects completed in all regions of Oman, we understand the unique challenges of water supply in arid environments:</p>
+      <ul>
+        <li><strong>Muscat Region:</strong> High-density urban network design</li>
+        <li><strong>Dhofar:</strong> Mountainous terrain solutions</li>
+        <li><strong>Al Batinah:</strong> Agricultural water distribution</li>
+        <li><strong>Desert Areas:</strong> Low-maintenance systems</li>
+      </ul>
+    </section>
+
+    <section class="cta-section">
+      <h2>Planning a Water Supply Project?</h2>
+      <p>Contact our infrastructure specialists for a consultation</p>
+      <div>
+        <a class="cta" href="https://wa.me/96879271055" target="_blank">WhatsApp Consultation</a>
+        <a class="cta" href="tel:+96879271055">Call Our Engineers</a>
+        <a class="cta" href="mailto:water@alwejhagroup.com">Request Proposal</a>
+      </div>
+    </section>
+
+    <section>
+      <h3>Explore More Water Solutions</h3>
+      <p>Discover AL WEJHA GROUP's full capabilities in water infrastructure:
+        <a class="backlink" href="https://www.alwejhagroup.com/water-infrastructure" target="_blank">View Water Division</a>
+      </p>
+    </section>
+  </div>
+
+  <!-- Benchmark Footer -->
+  <footer>
+    <p>&copy; 2025 AL WEJHA GROUP | 
+      <a href="https://www.alwejhagroup.com/sitemap.xml">Sitemap</a> | 
+      <a href="https://www.alwejhagroup.com/privacy-policy">Privacy Policy</a> | 
+      <a href="https://www.alwejhagroup.com/terms-of-service">Terms of Service</a>
+    </p>
+    <p>Water Infrastructure Division - Serving All Governorates of Oman</p>
+  </footer>
+</body>
+</html>
