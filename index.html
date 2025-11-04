@@ -1,343 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="description" content="Complete water supply system solutions in Oman - pipeline networks, pumping stations & distribution infrastructure by AL WEJHA GROUP" />
-  <meta name="keywords" content="water supply system Oman, pipeline installation, water distribution network, pumping stations Oman, municipal water infrastructure, AL WEJHA GROUP" />
-  <meta name="author" content="AL WEJHA GROUP" />
-  <title>Water Supply Systems in Oman | AL WEJHA GROUP</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-  <link rel="icon" href="./water-supply-system-oman.webp" type="image/webp">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!-- Primary SEO -->
+  <title>Building Fire System Evaluation & Fire Risk Assessment — Oman | Fire System Inspection, Alarm Testing, NFPA Compliance</title>
+  <meta name="description" content="Fire system evaluation, fire risk assessment, alarm testing, sprinkler testing and NFPA-compliant fire safety audits across Muscat, Salalah, Sohar and all Oman regions. Certified reports, rapid site inspections and practical remediation plans." />
+  <link rel="canonical" href="https://building-fire-system-evaluation-oman.alwejhagroup.com/" />
+
+  <!-- hreflang for Arabic -->
+  <link rel="alternate" hreflang="ar" href="https://building-fire-system-evaluation-oman.alwejhagroup.com/ar/" />
+  <link rel="alternate" hreflang="en" href="https://building-fire-system-evaluation-oman.alwejhagroup.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Building Fire System Evaluation & Fire Risk Assessment — Oman" />
+  <meta property="og:description" content="Fire system inspection, alarm testing and fire safety audits across Muscat, Salalah & Sohar. Certified, NFPA-aligned evaluations and clear remediation reports." />
+  <meta property="og:url" content="https://building-fire-system-evaluation-oman.alwejhagroup.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"Building Fire System Evaluation — Al Wejhagroup (Oman)",
+    "url":"https://building-fire-system-evaluation-oman.alwejhagroup.com/",
+    "logo":"https://www.alwejhagroup.com/assets/logo.webp",
+    "image":"https://building-fire-system-evaluation-oman.alwejhagroup.com/assets/hero-fire-eval.webp",
+    "description":"Fire risk assessments, fire alarm & sprinkler testing, system inspections and NFPA-compliant fire safety audits across Oman.",
+    "address":{"@type":"PostalAddress","addressLocality":"Muscat","addressCountry":"OM"},
+    "areaServed":["Muscat","Salalah","Sohar","Nizwa","Sur"],
+    "telephone":"+968-XX-XXXXXXX",
+    "serviceType":["Fire risk assessment","Fire system inspection","Fire alarm testing","Sprinkler testing","Fire safety audit","Emergency lighting testing"]
+  }
+  </script>
+
   <style>
-    :root {
-      --pipe-blue: #1a6bb0;
-      --flow-cyan: #00b4d8;
-      --valve-red: #e63946;
-      --infra-gray: #4a5759;
-      --light-bg: #f8f9fa;
-    }
-    
-    body {
-      font-family: 'Open Sans', sans-serif;
-      background-color: var(--light-bg);
-      margin: 0;
-      padding: 0;
-      color: #333;
-      line-height: 1.6;
-    }
-    
-    header {
-      background: linear-gradient(rgba(26,107,176,0.85), rgba(26,107,176,0.85)), 
-                  url('./water-supply-system-oman.webp') center/cover;
-      color: white;
-      padding: 80px 20px 60px;
-      text-align: center;
-      position: relative;
-    }
-    
-    header h1 {
-      font-family: 'Ubuntu', sans-serif;
-      font-size: 2.8rem;
-      margin: 0 0 15px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-    
-    header p {
-      font-size: 1.3rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    
-    /* Benchmark Navigation - Identical Structure */
-    nav {
-      background-color: white;
-      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-      padding: 15px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    
-    nav .container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    
-    nav a {
-      margin: 0 15px;
-      color: var(--infra-gray);
-      text-decoration: none;
-      font-weight: 600;
-      padding: 5px 0;
-      border-bottom: 3px solid transparent;
-      transition: all 0.3s ease;
-    }
-    
-    nav a:hover {
-      color: var(--pipe-blue);
-      border-bottom-color: var(--valve-red);
-    }
-    
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    
-    /* Water Supply Specific Styles */
-    .network-diagram {
-      width: 100%;
-      height: auto;
-      margin: 40px 0;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-    
-    .system-components {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      margin: 50px 0;
-    }
-    
-    .component-card {
-      background: white;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-      transition: all 0.3s ease;
-      border-top: 4px solid var(--flow-cyan);
-    }
-    
-    .component-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-    }
-    
-    .component-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    
-    .component-card h3 {
-      color: var(--pipe-blue);
-      margin: 20px 20px 10px;
-    }
-    
-    .specs-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 30px 0;
-    }
-    
-    .specs-table th {
-      background: var(--pipe-blue);
-      color: white;
-      padding: 12px;
-      text-align: left;
-    }
-    
-    .specs-table td {
-      padding: 10px 12px;
-      border-bottom: 1px solid #eee;
-    }
-    
-    .specs-table tr:nth-child(even) {
-      background: #f5f5f5;
-    }
-    
-    /* Benchmark CTA Section */
-    .cta-section {
-      background: linear-gradient(135deg, var(--pipe-blue), #144471);
-      color: white;
-      padding: 60px 20px;
-      margin: 60px 0;
-      border-radius: 8px;
-      text-align: center;
-    }
-    
-    .cta, .backlink {
-      display: inline-block;
-      background-color: var(--valve-red);
-      color: white;
-      padding: 12px 30px;
-      text-decoration: none;
-      border-radius: 50px;
-      margin: 10px 10px;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
-    
-    .cta:hover, .backlink:hover {
-      background-color: #c1121f;
-      transform: translateY(-2px);
-    }
-    
-    /* Benchmark Footer */
-    footer {
-      background-color: var(--infra-gray);
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-      margin-top: 60px;
-    }
-    
-    footer a {
-      color: var(--flow-cyan);
-      text-decoration: none;
-      margin: 0 15px;
-    }
-    
-    footer a:hover {
-      text-decoration: underline;
-    }
-    
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-      
-      .system-components {
-        grid-template-columns: 1fr;
-      }
-    }
+    :root{--accent:#0f6;--muted:#6b7280;--max:1100px}
+    body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;color:#0b1220;line-height:1.5}
+    .wrap{max-width:var(--max);margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .logo{display:flex;align-items:center;gap:12px}
+    .hero{display:grid;grid-template-columns:1fr;gap:20px;align-items:center;padding:28px 0}
+    .hero .kicker{color:var(--muted);font-weight:600}
+    h1{font-size:clamp(1.6rem,2.6vw,2.4rem);margin:8px 0}
+    .lead{font-size:1rem;color:#263238}
+    .cta{display:inline-block;background:#0b74b7;color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:600}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:24px}
+    .card{border:1px solid #e6edf2;padding:18px;border-radius:12px;background:#fff}
+    .regions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .region{background:#f1f5f9;padding:8px 12px;border-radius:999px;font-weight:600}
+    footer{margin-top:36px;padding:18px 0;color:var(--muted);font-size:0.95rem}
+    .two-col{display:grid;grid-template-columns:1fr 320px;gap:22px}
+    @media(max-width:880px){.two-col{grid-template-columns:1fr}}
+    .faq dt{font-weight:700;margin-top:12px}
+    .arabic{font-family:Arial,"Noto Naskh Arabic",serif;direction:rtl}
   </style>
 </head>
 <body>
-  <header>
-    <h1>Water Supply Systems in Oman</h1>
-    <p>Reliable water distribution networks for municipalities and industries</p>
-  </header>
-
-  <!-- Benchmark Navigation -->
-  <nav>
-    <div class="container">
-      <a href="https://www.alwejhagroup.com/">Home</a>
-      <a href="https://www.alwejhagroup.com/area-of-expertise" target="_blank">Area Of Expertise</a>
-      <a href="https://www.alwejhagroup.com/our-services" target="_blank">Our Services</a>
-      <a href="https://www.alwejhagroup.com/our-clients" target="_blank">Our Clients</a>
-      <a href="https://www.alwejhagroup.com/contact" target="_blank">Contact</a>
-    </div>
-  </nav>
-
-  <div class="container">
-    <section>
-      <h2>Integrated Water Supply Solutions</h2>
-      <p>AL WEJHA GROUP designs and implements complete water supply systems across Oman, from high-pressure transmission mains to localized distribution networks. Our turnkey solutions ensure reliable water delivery with minimal losses.</p>
-      
-      <img src="./water-network-diagram.webp" alt="Water supply system diagram" class="network-diagram" loading="lazy">
-      
-      <div class="system-components">
-        <div class="component-card">
-          <img src="./pipeline-installation.webp" alt="Pipeline installation in Oman" loading="lazy">
-          <h3>Transmission Pipelines</h3>
-          <ul>
-            <li>Ductile iron (DI) pipes up to DN1200</li>
-            <li>HDPE pipes for corrosive environments</li>
-            <li>Trenchless installation options</li>
-          </ul>
-        </div>
-        
-        <div class="component-card">
-          <img src="./pumping-station.webp" alt="Pumping station installation" loading="lazy">
-          <h3>Booster Stations</h3>
-          <ul>
-            <li>Horizontal/vertical multistage pumps</li>
-            <li>Variable frequency drives</li>
-            <li>SCADA-controlled operation</li>
-          </ul>
-        </div>
-        
-        <div class="component-card">
-          <img src="./storage-tank.webp" alt="Water storage tanks in Oman" loading="lazy">
-          <h3>Storage Reservoirs</h3>
-          <ul>
-            <li>GRP, steel, and concrete tanks</li>
-            <li>50m³ to 10,000m³ capacity</li>
-            <li>Overflow and level monitoring</li>
-          </ul>
-        </div>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <img src="https://www.alwejhagroup.com/assets/logo.webp" alt="Al Wejhagroup" width="120"/>
       </div>
-    </section>
+      <nav>
+        <a href="https://www.alwejhagroup.com/">Home</a>
+        <span style="margin:0 8px;color:var(--muted)">|</span>
+        <a href="https://www.alwejhagroup.com/contact">Contact</a>
+      </nav>
+    </header>
 
-    <section>
-      <h2>Technical Specifications</h2>
-      <table class="specs-table">
-        <thead>
-          <tr>
-            <th>Component</th>
-            <th>Materials</th>
-            <th>Pressure Rating</th>
-            <th>Standards</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Transmission Mains</td>
-            <td>DI, HDPE, PVC-O</td>
-            <td>PN10-PN25</td>
-            <td>ISO 2531, EN 545</td>
-          </tr>
-          <tr>
-            <td>Distribution Pipes</td>
-            <td>HDPE, uPVC</td>
-            <td>PN6-PN16</td>
-            <td>ISO 4427, EN 1452</td>
-          </tr>
-          <tr>
-            <td>Valve Chambers</td>
-            <td>GRP, Concrete</td>
-            <td>10-25 bar</td>
-            <td>ISO 5208</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+    <main>
+      <section class="hero">
+        <div>
+          <p class="kicker">Fire system evaluation • Fire risk assessment • NFPA-compliant reports</p>
+          <h1>Building Fire System Evaluation & Fire Risk Assessment — Oman</h1>
+          <p class="lead">Certified fire system inspections, fire alarm testing, sprinkler & suppression checks and full fire safety audits across Muscat, Salalah, Sohar and all Oman regions. Fast on-site assessments, clear remediation plans and certified reports suitable for regulatory compliance and insurance.</p>
+          <p style="margin-top:12px">
+            <a class="cta" href="https://www.alwejhagroup.com/contact">Request a Site Inspection</a>
+            <a class="cta" href="tel:+968-XXXXXXXX" style="background:#0b1220;margin-left:8px">Call Now</a>
+          </p>
+          <div class="regions">
+            <span class="region">Muscat</span>
+            <span class="region">Salalah</span>
+            <span class="region">Sohar</span>
+            <span class="region">Nizwa</span>
+            <span class="region">Sur</span>
+          </div>
+        </div>
 
-    <section>
-      <h2>Omani Water Infrastructure Experts</h2>
-      <p>With projects completed in all regions of Oman, we understand the unique challenges of water supply in arid environments:</p>
-      <ul>
-        <li><strong>Muscat Region:</strong> High-density urban network design</li>
-        <li><strong>Dhofar:</strong> Mountainous terrain solutions</li>
-        <li><strong>Al Batinah:</strong> Agricultural water distribution</li>
-        <li><strong>Desert Areas:</strong> Low-maintenance systems</li>
-      </ul>
-    </section>
+        <div>
+          <img src="https://building-fire-system-evaluation-oman.alwejhagroup.com/assets/hero-fire-eval.webp" alt="Fire system inspection in Oman" style="width:100%;border-radius:12px;box-shadow:0 8px 30px rgba(10,20,30,.06)"/>
+        </div>
+      </section>
 
-    <section class="cta-section">
-      <h2>Planning a Water Supply Project?</h2>
-      <p>Contact our infrastructure specialists for a consultation</p>
-      <div>
-        <a class="cta" href="https://wa.me/96879271055" target="_blank">WhatsApp Consultation</a>
-        <a class="cta" href="tel:+96879271055">Call Our Engineers</a>
-        <a class="cta" href="mailto:water@alwejhagroup.com">Request Proposal</a>
-      </div>
-    </section>
+      <section class="two-col" style="margin-top:18px">
+        <article>
+          <h2>Our Fire System Evaluation Services</h2>
+          <p>We provide full building fire system evaluation services tailored to Omani regulations and international standards (NFPA). Our team inspects, tests, and certifies:</p>
+          <div class="services">
+            <div class="card"><h3>Fire risk assessment Oman</h3><p>Comprehensive FRA for hotels, warehouses, commercial buildings and residential towers — hazard identification, likelihood rating and mitigation matrix.</p></div>
+            <div class="card"><h3>Fire system inspection & testing</h3><p>Fire alarm testing, smoke detector checks, manual call points, VESDA sampling and full system functional tests.</p></div>
+            <div class="card"><h3>Sprinkler & suppression system checks</h3><p>Wet/dry sprinkler testing, deluge, pre-action systems and kitchen suppression system inspection and maintenance recommendations.</p></div>
+            <div class="card"><h3>Emergency lighting & evacuation planning</h3><p>Emergency lighting testing, exit signage checks and practical evacuation plan development tailored to your building.</p></div>
+            <div class="card"><h3>NFPA compliance & certification</h3><p>Report templates and gap analysis to meet NFPA standards and local regulatory requirements.</p></div>
+            <div class="card"><h3>Periodic maintenance & alarm servicing</h3><p>Planned maintenance schedules, alarm system health reports and field technician support for repairs and retrofits.</p></div>
+          </div>
 
-    <section>
-      <h3>Explore More Water Solutions</h3>
-      <p>Discover AL WEJHA GROUP's full capabilities in water infrastructure:
-        <a class="backlink" href="https://www.alwejhagroup.com/water-infrastructure" target="_blank">View Water Division</a>
-      </p>
-    </section>
+          <h2 style="margin-top:18px">Why choose our fire system evaluation?</h2>
+          <ul>
+            <li>Certified engineers familiar with Omani building regulations and NFPA codes.</li>
+            <li>Fast site inspection with clear, actionable remediation reports.</li>
+            <li>Specialized checks — VESDA, kitchen suppression, pre-handover inspections.</li>
+            <li>Competitive pricing and region-specific service packages for Muscat, Salalah, Sohar, and beyond.</li>
+          </ul>
+
+          <h2 style="margin-top:18px">Localized services</h2>
+          <ul>
+            <li>Fire risk assessment for hotels in Muscat</li>
+            <li>Annual fire system inspection Salalah</li>
+            <li>Fire alarm testing for schools Oman</li>
+            <li>Fire system evaluation for warehouses Oman</li>
+            <li>Pre-handover fire inspection Oman</li>
+          </ul>
+
+          <h2 style="margin-top:18px">FAQ</h2>
+          <dl class="faq">
+            <dt>Q: What is included in a fire risk assessment?</dt>
+            <dd>A: Hazard identification, vulnerability analysis, recommendations for mitigation, system performance checks, and a written report.</dd>
+
+            <dt>Q: Do your reports follow NFPA guidelines?</dt>
+            <dd>A: Yes — evaluations reference NFPA standards and provide compliance gap analysis.</dd>
+
+            <dt>Q: How long does an on-site inspection take?</dt>
+            <dd>A: Typically 2–8 hours depending on building size; full audits may take longer.</dd>
+
+            <dt>Q: Can you prepare documentation for regulatory submission?</dt>
+            <dd>A: Yes. We deliver certified reports, remediation lists, and follow-up inspection options.</dd>
+          </dl>
+        </article>
+
+        <aside>
+          <div class="card">
+            <h3>Quick contact</h3>
+            <p><strong>Phone:</strong> <a href="tel:+968-93884247">+968-93884247</a></p>
+            <p><strong>Email:</strong> <a href="mailto:business@alwejhagroup.com">info@alwejhagroup.com</a></p>
+            <p><a class="cta" href="https://www.alwejhagroup.com/contact">Book Inspection</a></p>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <h4>Locations we serve</h4>
+            <p>Muscat, Salalah, Sohar, Nizwa, Sur — on-site within 48–72 hours in most locations.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section style="margin-top:24px">
+        <h2 class="arabic">خدمات تقييم أنظمة الحريق في عُمان — تقييم مخاطر الحريق وفحص الأنظمة</h2>
+        <p class="arabic">نقدم خدمات فحص وتقييم نظم الحريق، اختبارات أجهزة الإنذار، فحص الرشاشات وأنظمة الإخماد وفق معايير NFPA، مع تقارير معتمدة صالحة للجهات التنظيمية وشركات التأمين في مسقط وصلالة وصحار وباقي محافظات عمان.</p>
+      </section>
+
+      <section style="margin-top:18px">
+        <h2>Contact & Next Steps</h2>
+        <p>Free pre-inspection consultation and on-site fixed-fee quote. Reports delivered in PDF with remediation priority levels and cost estimates for repairs.</p>
+        <p><a class="cta" href="https://www.alwejhagroup.com/contact">Request Site Inspection — Fire System Evaluation Oman</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="yr"></span> Al Wejhagroup — Building Fire System Evaluation Services • <a href="https://www.alwejhagroup.com/">alwejhagroup.com</a></p>
+    </footer>
   </div>
 
-  <!-- Benchmark Footer -->
-  <footer>
-    <p>&copy; 2025 AL WEJHA GROUP | 
-      <a href="https://www.alwejhagroup.com/sitemap.xml">Sitemap</a> | 
-      <a href="https://www.alwejhagroup.com/privacy-policy">Privacy Policy</a> | 
-      <a href="https://www.alwejhagroup.com/terms-of-service">Terms of Service</a>
-    </p>
-    <p>Water Infrastructure Division - Serving All Governorates of Oman</p>
-  </footer>
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
